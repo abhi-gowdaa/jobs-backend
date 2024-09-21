@@ -1,0 +1,9 @@
+
+google-generativeai
+python_dotenv
+fastapi
+uvicorn
+requests
+validators
+scikit-learn
+pandas
