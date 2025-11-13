@@ -27,7 +27,7 @@ app.add_middleware(
     allow_headers=['*']
 )
 
-model=genai.GenerativeModel("gemini-1.5-flash")
+model=genai.GenerativeModel("gemini-2.0-flash-lite")
 
 
 df_combined = df.astype(str).apply(lambda x: ' '.join(x), axis=1).tolist()
@@ -86,4 +86,5 @@ async def webchat(question:str):
     except:
         raise HTTPException(status_code=500, detail="Internal Server Error")
         
+
 
